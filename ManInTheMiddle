@@ -1,0 +1,19 @@
+Execute kali e metasploit table
+
+1) capture o ip do metasploit table
+2) abra a ferramenta wireshark
+3) abra o navegar do kali
+4) coloque o Ip/dvwa
+5) eth0 captura a ethernet.
+6) a partir dali você pode visualizar os dados trafegados na rede. Os pacotes
+7) login e senha do dvwa: admin e password.
+8) http.request.method == POST (Filtrar os pacotes)
+
+
+Ferramenta ETTERCAP
+
+1) é necessário fazer o redirecionamento do trafego
+2) Inicie a ferramenta, ela tem as interfaces la.
+3) para o redirecionamento abra no kali o termina: sudo echo 1 >  /proc/sys/net/ipv4/ip_forward
+4) selecione na interface do attercap as opçoes... tem a ARP poisining
+5) Após feito o envenenamento ele ja começa a mostrar as solicitações
